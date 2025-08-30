@@ -1,8 +1,9 @@
 # SSH to GitHub Actions
 
 This GitHub Action offers you connect to GitHub Actions VM via SSH for interactive debugging
-tmate method stops working because the server shut down, only ngrok method works ,but payment method is required by ngrok to verify your identity
-and no web ssh with ngrok. 
+
+Tmate method stops working because the server shut down, only ngrok method works,
+but payment method is required by ngrok to verify your identity and no web ssh with ngrok. 
 
 ## Features
 
