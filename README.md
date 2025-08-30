@@ -1,6 +1,8 @@
 # SSH to GitHub Actions
 
 This GitHub Action offers you connect to GitHub Actions VM via SSH for interactive debugging
+tmate method stops working because the server shut down, only ngrok method works ,but payment method is required by ngrok to verify your identity
+and no web ssh with ngrok. 
 
 ## Features
 
@@ -15,7 +17,7 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 
 ```yaml
 - name: Start SSH via tmate
-  uses: P3TERX/ssh2actions@main
+  uses: maxmib/ssh2actions@v2.0
   # Send connection info to Telegram (optional)
   # You can find related documents here: https://core.telegram.org/bots
   env:
@@ -27,7 +29,7 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 
 ```yaml
 - name: Start SSH via ngrok
-  uses: P3TERX/ssh2actions@main
+  uses: maxmib/ssh2actions@v2.0
   with:
     mode: ngrok
   env:
